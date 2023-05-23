@@ -15,7 +15,6 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws IOException {
-        System.out.println("Hello World!");
         Properties vProp = new Properties(); // Version properties
         InputStream vInputStream = null;
         try {
@@ -26,8 +25,6 @@ public class App {
                 vInputStream.close();
         }
         String version = vProp.getProperty("org.donald.version", "?");
-        System.out.println("Application version : " + version);
-        System.out.println("****************************************************\n");
 
         UtilsMessage.welcomeMessage(version);
 

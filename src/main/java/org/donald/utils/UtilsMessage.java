@@ -73,12 +73,7 @@ public class UtilsMessage {
      */
     public static void welcomeMessage (String version){
         System.out.println(ConsoleColors.YELLOW + "###########################################################################");
-        System.out.println(ConsoleColors.YELLOW +"#"+"                           "+ConsoleColors.GREEN_UNDERLINED +"WELCOME TO LAB1 v"+version+""+ConsoleColors.YELLOW+"                          #"+ConsoleColors.RESET);
-        System.out.println(ConsoleColors.YELLOW +"#"+ConsoleColors.RESET+"                                                                         "+ConsoleColors.YELLOW+"#"+ConsoleColors.RESET);
-        System.out.println(ConsoleColors.YELLOW +"#"+ConsoleColors.YELLOW+"  - This labs allows you tu use MultiThreading.                          "+ConsoleColors.YELLOW+"#"+ConsoleColors.RESET);
-        System.out.println(ConsoleColors.YELLOW +"#"+ConsoleColors.YELLOW+"  - You can use this terminal to create a server or a client with a      "+ConsoleColors.YELLOW+"#"+ConsoleColors.RESET);
-        System.out.println(ConsoleColors.YELLOW +"#"+ConsoleColors.YELLOW+" specified port number                                                   "+ConsoleColors.YELLOW+"#"+ConsoleColors.RESET);
-        System.out.println(ConsoleColors.YELLOW +"#"+ConsoleColors.RESET+"                                                                         "+ConsoleColors.YELLOW+"#"+ConsoleColors.RESET);
+        System.out.println(ConsoleColors.YELLOW +"                           "+ConsoleColors.GREEN_UNDERLINED +"Application version : v"+version+""+ConsoleColors.YELLOW+"                          "+ConsoleColors.RESET);
         System.out.println(ConsoleColors.YELLOW +"###########################################################################\n\n");
     }
     /**
