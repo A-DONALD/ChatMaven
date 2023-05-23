@@ -72,19 +72,19 @@ public class UtilsMessage {
      * @param version
      */
     public static void welcomeMessage (String version){
-        System.out.println(ConsoleColors.YELLOW + "###########################################################################");
-        System.out.println(ConsoleColors.YELLOW +"                           "+ConsoleColors.GREEN_UNDERLINED +"Application version : v"+version+""+ConsoleColors.YELLOW+"                          "+ConsoleColors.RESET);
-        System.out.println(ConsoleColors.YELLOW +"###########################################################################\n\n");
+        System.out.println(ConsoleColors.YELLOW + "###########################################################################"+ConsoleColors.RESET);
+        System.out.println(ConsoleColors.GREEN +"                   "+ConsoleColors.RESET+""+ConsoleColors.GREEN_UNDERLINED +"Application version : v"+version+""+ConsoleColors.RESET+"                     ");
+        System.out.println(ConsoleColors.YELLOW +"###########################################################################\n\n"+ConsoleColors.RESET);
     }
     /**
      * Reversed a message (ABCD --> DCBA)
      * @param message : The message to need to be reversed
      * @return reversed message
      */
-    String reverse(String message) {
+    public static String reverseMessage(String message) {
         if ((null == message) || (message.length() <= 1)) {
             return message;
         }
-        return reverse(message.substring(1)) + message.charAt(0);
+        return reverseMessage(message.substring(1)) + message.charAt(0);
     }
 }
