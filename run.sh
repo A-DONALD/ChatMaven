@@ -1,6 +1,6 @@
 #/bin/bash
 
-java -jar target/Chat-1.0-SNAPSHOT.jar
 mvn package
+java -jar target/Chat-1.0-SNAPSHOT.jar
 
 # EOF
