@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <!-- ======================================================================= -->
+  <!-- Project information -->
+  <!-- ======================================================================= -->
+  <!-- Maven information -->
+  <groupId>org.donald</groupId>
+  <artifactId>Chat</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <!-- General information -->
+  <name>Chat</name>
+  <url>https://github.com/A-DONALD/ServerChat</url>
+  <description>
+    This is my application to create a multithread server
+  </description>
+  <!-- Developers -->
+  <developers>
+    <developer>
+      <id>donald</id>
+      <name>Donald Youngoua</name>
+      <email>donaldyoungoua@gmail.com</email>
+      <roles>
+        <role>author</role>
+        <role>developer</role>
+        <role>maintainer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+  </developers>
+  <!-- Contributors -->
+  <contributors>
+    <contributor>
+      <name>Kamdem Guylaine</name>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </contributor>
+  </contributors>
+  <!-- ======================================================================= -->
+  <!-- Properties -->
+  <!-- ======================================================================= -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <!-- ======================================================================= -->
+  <!-- Build -->
+  <!-- ======================================================================= -->
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.0.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <!-- Creation of Manifest to define the main class -->
+            <manifest>
+              <mainClass>org.donald.App</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+  </build>
+</project>
