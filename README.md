@@ -17,14 +17,14 @@ This is the basic interaction with Sockets between server-clients using the Sock
 
 ### How to use it ?
 
-1. First of all, you have to clone the repository with the command
+1. First of all, you have to **clone the repository** with the command
    ```
    git clone https://github.com/A-DONALD/ChatMaven.git
    ```
 
-2. The next step is to run the application: you can execute the file _run.sh_
+2. The next step is to **run the application**: you can execute the file _run.sh_
 
-3. If the run.sh doesn't work or if you want to execute in command line:
+3. If the _run.sh_ doesn't work or if you want to execute in command line:
 
    - Build the project with the command
    ```
