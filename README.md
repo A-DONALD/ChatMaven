@@ -17,7 +17,7 @@ This is the basic interaction with Sockets between server-clients using the Sock
 
 ### How to use it ?
 
-1. First of all, you need to run the JAVA application: you can execute the run.sh
+1. First of all, you need to run the JAVA application: you can execute the _run.sh_
 
 2. If you want to execute in command line:
 
