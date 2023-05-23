@@ -17,9 +17,14 @@ This is the basic interaction with Sockets between server-clients using the Sock
 
 ### How to use it ?
 
-1. First of all, you need to run the JAVA application: you can execute the _run.sh_
+1. First of all, you have to clone the repository with the command
+   ```
+   git clone https://github.com/A-DONALD/ChatMaven.git
+   ```
 
-2. If you want to execute in command line:
+2. The next step is to run the application: you can execute the file _run.sh_
+
+3. If the run.sh doesn't work or if you want to execute in command line:
 
    - Build the project with the command
    ```
@@ -31,8 +36,8 @@ This is the basic interaction with Sockets between server-clients using the Sock
    java -jar target/Chat-1.1-SNAPSHOT.jar
    ```
 
-3. Then, you will have to choose what is this terminal for (Server or Client) by selecting the correct number.
-4. Then select a port number, which is the port that will be used for the socket (Server or Client).
+4. Then, you will have to choose what is this terminal for (Server or Client) by selecting the correct number.
+5. Then select a port number, which is the port that will be used for the socket (Server or Client).
 
 You can easily follow the instructions you can see on the terminal.
 
