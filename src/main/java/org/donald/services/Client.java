@@ -25,14 +25,6 @@ public class Client {
 		}
 	}
 
-	// ** changement: c'est cette classe qui permet d'inverser le message
-	String reverse(String str) {
-		if ((null == str) || (str.length() <= 1)) {
-			return str;
-		}
-		return reverse(str.substring(1)) + str.charAt(0);
-	}
-
 	public void sendMessage() {
 		try {
 			bufferedWriter.write(username);
@@ -42,8 +34,7 @@ public class Client {
 			Scanner scanner = new Scanner(System.in);
 			while (socket.isConnected()) {
 				String messageToSend = scanner.nextLine();
-				String messageReverse = reverse(messageToSend);
-				bufferedWriter.write(username + " : " + messageToSend.length() + " " + messageReverse);
+				bufferedWriter.write(username + " : " + messageToSend.length() + " " + messageToSend);
 				bufferedWriter.newLine();
 				bufferedWriter.flush();
 			}

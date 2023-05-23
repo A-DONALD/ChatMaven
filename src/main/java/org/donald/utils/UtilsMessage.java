@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class UtilsMessage {
 
-/*
     /**
      * Ask action for the user in the console
      * @param scanner
@@ -68,7 +67,10 @@ public class UtilsMessage {
         return result.toString();
     }
 
-
+    /**
+     * Remove the name of a message and put "YOU" (Just for the sender)
+     * @param version
+     */
     public static void welcomeMessage (String version){
         System.out.println(ConsoleColors.YELLOW + "###########################################################################");
         System.out.println(ConsoleColors.YELLOW +"#"+"                           "+ConsoleColors.GREEN_UNDERLINED +"WELCOME TO LAB1 v"+version+""+ConsoleColors.YELLOW+"                          #"+ConsoleColors.RESET);
@@ -84,4 +86,10 @@ public class UtilsMessage {
      * @param message : The message to need to be reversed
      * @return reversed message
      */
+    String reverse(String message) {
+        if ((null == message) || (message.length() <= 1)) {
+            return message;
+        }
+        return reverse(message.substring(1)) + message.charAt(0);
+    }
 }
